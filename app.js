@@ -43,7 +43,7 @@ const app = () => {
   const resetPlayer = () => {
     sound.pause();
     video.pause();
-    playBtn.src = "/svg/play.svg";
+    playBtn.src = "./svg/play.svg";
     sound.currentTime = 0;
   };
   // play / pause
@@ -51,11 +51,11 @@ const app = () => {
     if (sound.paused) {
       sound.play();
       video.play();
-      playBtn.src = "/svg/pause.svg";
+      playBtn.src = "./svg/pause.svg";
     } else {
       sound.pause();
       video.pause();
-      playBtn.src = "/svg/play.svg";
+      playBtn.src = "./svg/play.svg";
     }
   };
 
